@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class JavaClass implements Class {
-    private ClassModel model;
+    private final ClassModel model;
     public JavaClass(Path path) throws IOException {
         model = ClassFile.of().parse(path);
     }
